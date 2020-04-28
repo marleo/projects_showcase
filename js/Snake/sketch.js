@@ -5,7 +5,8 @@ let w;
 let h;
 
 function setup() {
-  createCanvas(400, 400);
+  let myCanvas = createCanvas(400, 400);
+  myCanvas.parent("snake");
   frameRate(10);
   background(0);
 
