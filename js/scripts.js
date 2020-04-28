@@ -64,6 +64,11 @@
         $(this).removeClass("floating-label-form-group-with-focus");
       });
     });
+       
+    $("#SpaceShipModal").on("click", function(){
+      console.log("Hi")
+      window.open("js/SpaceShip/SpaceShip.html");
+    });
   
   })(jQuery); // End of use strict
   
