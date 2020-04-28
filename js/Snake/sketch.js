@@ -5,8 +5,7 @@ let w;
 let h;
 
 function setup() {
-  let myCanvas = createCanvas(400, 400);
-  myCanvas.parent("snake");
+  createCanvas(400, 400);
   frameRate(10);
   background(0);
 
@@ -46,6 +45,23 @@ function foodLocation(){
   food = createVector(x, y);
 }
 
+function mouseClicked(){
+  console.log(height - height / 4)
+  if(mouseX < width/2 && mouseY < height - height/5 && mouseY > height/5){
+    console.log("left")
+    snake.setDir(-1, 0);
+  } else if(mouseX > width/2 && mouseY < height - height/5 && mouseY > height/5) {
+    console.log("Right")
+    snake.setDir(1, 0);
+  } else if(mouseY < height/5){
+    console.log("Up")
+    snake.setDir(0, -1);
+  } else if(mouseY > height - height/5){
+    console.log("Down")
+    snake.setDir(0, 1);
+  }
+}
+
 function keyPressed(){
   if(keyCode === LEFT_ARROW){
     snake.setDir(-1, 0);
@@ -55,5 +71,7 @@ function keyPressed(){
     snake.setDir(0, 1);
   } else if(keyCode === UP_ARROW){
     snake.setDir(0, -1);
-  } 
+  } else if(key == " "){
+    snake.grow();
+  }
 }
