@@ -69,5 +69,10 @@
       console.log("Hi")
       window.open("js/SpaceShip/SpaceShip.html");
     });
+	
+	$("#PongClone").on("click", function(){
+      console.log("Hi")
+      window.open("js/PongClone/PongClone.html");
+    });
 
   })(jQuery); // End of use strict
