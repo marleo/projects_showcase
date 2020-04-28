@@ -46,18 +46,6 @@ function foodLocation(){
   food = createVector(x, y);
 }
 
-function mouseClicked(){
-  if(mouseX < width/2 && mouseY < height - height/5 && mouseY > height/5){
-    snake.setDir(-1, 0);
-  } else if(mouseX > width/2 && mouseY < height - height/5 && mouseY > height/5) {
-    snake.setDir(1, 0);
-  } else if(mouseY < height/5){
-    snake.setDir(0, -1);
-  } else if(mouseY > height - height/5){
-    snake.setDir(0, 1);
-  }
-}
-
 function keyPressed(){
   if(keyCode === LEFT_ARROW){
     snake.setDir(-1, 0);
@@ -67,10 +55,5 @@ function keyPressed(){
     snake.setDir(0, 1);
   } else if(keyCode === UP_ARROW){
     snake.setDir(0, -1);
-  } else if(key == " "){
-    snake = new Snake();
-    background(0);
-    foodLocation();
-    loop();
-  }
+  } 
 }
