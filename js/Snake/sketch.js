@@ -47,18 +47,13 @@ function foodLocation(){
 }
 
 function mouseClicked(){
-  console.log(height - height / 4)
   if(mouseX < width/2 && mouseY < height - height/5 && mouseY > height/5){
-    console.log("left")
     snake.setDir(-1, 0);
   } else if(mouseX > width/2 && mouseY < height - height/5 && mouseY > height/5) {
-    console.log("Right")
     snake.setDir(1, 0);
   } else if(mouseY < height/5){
-    console.log("Up")
     snake.setDir(0, -1);
   } else if(mouseY > height - height/5){
-    console.log("Down")
     snake.setDir(0, 1);
   }
 }
