@@ -68,6 +68,9 @@ function keyPressed(){
   } else if(keyCode === UP_ARROW){
     snake.setDir(0, -1);
   } else if(key == " "){
-    snake.grow();
+    snake = new Snake();
+    background(0);
+    foodLocation();
+    loop();
   }
 }
