@@ -11,7 +11,7 @@
 
 
 <h2 align="center">Super Pong Bros.</h2>
-<p align="center">A pong clone with a few twists. Sprites and music are from Super Mario Bros. but modified. Played around with the physics a bit to try to make it feel like youre flying on a cloud. Didn't really nail it i guess haha</p>
+<p align="center">A pong clone with a few twists. Sprites and music are from Super Mario Bros. but modified.</br>Played around with the physics a bit to try to make it feel like youre flying on a cloud. Didn't really nail it i guess haha</p>
 <p align="center"><img src="assets/img/portfolio/pongclone.png" width="300"></p>
 
 
